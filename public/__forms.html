@@ -1,0 +1,26 @@
+<!--
+  Static form definition for Netlify Forms detection.
+
+  Netlify's build-time form parser scans static HTML files for forms marked
+  with data-netlify. With the Next.js runtime plugin, pages are server-rendered
+  and the hidden form in pages/index.tsx is not guaranteed to be present in the
+  static output the parser reads, so detection can silently fail and POSTs to /
+  return 404. This plain static file is always scanned, so the "contact" form is
+  reliably registered. The field names here MUST match the payload sent from
+  src/programs/Outlook.tsx (form-name, email, subject, message, bot-field).
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify Forms</title>
+  </head>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>
