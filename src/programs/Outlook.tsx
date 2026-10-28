@@ -37,11 +37,14 @@ const Outlook = () => {
       .join("&");
 
   const sendEmail = async () => {
-    if (from === "" || subject === "") {
+    if (from === "" || subject === "" || message === "") {
       return;
     }
     try {
-      const response = await fetch("/", {
+      // POST to the static form file (not "/"). Netlify Forms only captures
+      // submissions whose target URL is a static HTML file; with the Next.js
+      // runtime "/" is served dynamically and the submission is never recorded.
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
