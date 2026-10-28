@@ -16,11 +16,12 @@ import { RootState } from "@/types";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const INTRO = `Hi, I'm Glen - nice to meet you! I'm an Agentic Automation Engineer at Infocap,
-based in Lake Villa, Illinois. I'm passionate about using modern technology to take the tedious,
-repetitive parts of work off people's plates so they can spend their time on the parts that actually
-need a human. These days, that means building agentic workflows and AWS-based systems: wiring large
-language models and cloud services into the enterprise systems businesses already run on.`;
+const INTRO = `Hi, I'm Glen - nice to meet you! I'm a Principal Consultant for Software Architecture
+at TTEC Digital, based in Lake Villa, Illinois. I'm passionate about using modern technology to take
+the tedious, repetitive parts of work off people's plates so they can spend their time on the parts
+that actually need a human. These days, that means designing software architecture and AWS-based
+systems: wiring large language models and cloud services into the enterprise systems businesses
+already run on.`;
 
 const WHYSITE = `I have extremely fond memories of using XP and wanted to build a personal page anyways, 
 so it seemed nautral to combine the two. I have Paint in here as a useable tool but it'd be fun to add 
@@ -81,7 +82,7 @@ const Welcome = ({ id }: props) => {
                 tooltip="My Brain Dump"
                 onClick={() => {
                   window.open(
-                    "https://github.com/gpinfocap",
+                    "https://github.com/geepee123",
                     "_blank",
                     "noreferrer"
                   );

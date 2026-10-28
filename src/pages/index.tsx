@@ -43,7 +43,7 @@ export default function Home() {
     console.log("Icon Clicked!");
   };
   const handleOpenGitHub = () => {
-    window.open("https://github.com/gpinfocap", "_blank", "noreferrer");
+    window.open("https://github.com/geepee123", "_blank", "noreferrer");
   };
 
   const handleOpenLinkedin = () => {

@@ -219,8 +219,32 @@ export const GalleryAccordionTitles = ["Details"];
 export const WorkData = [
   {
     id: 1,
+    title: "Principal Consultant, Software Architecture - TTEC Digital",
+    date: "Sept 2026 - Present",
+    gitURL: "",
+    techstack: [
+      TechIcon.AWS,
+      TechIcon.LAMBDA,
+      TechIcon.DYNAMODB,
+      TechIcon.PYTHON,
+      TechIcon.CHATGPT,
+    ],
+    gallery: [],
+    overview: `I develop and deliver software architecture solutions for consulting clients,
+    building customer-focused relationships to identify their technical and business challenges.
+    I develop architectural specifications and requirements to arrive at the best solution, whether
+    establishing a new architecture or optimizing an existing one along with its associated
+    processes. I identify, define, and communicate the technical decisions, concepts, and
+    interrelationships within complex systems, and document the architectural model in enough detail
+    for developers and other stakeholders to build from. The role draws on deep subject matter
+    expertise across IT infrastructure, technology platforms, and architecture evaluation. I present
+    proposals to clients and drive working sessions to keep expectations, direction, and timelines
+    aligned.`,
+  },
+  {
+    id: 2,
     title: "Agentic Automation Engineer - Infocap AI",
-    date: "Nov 2024 - Present",
+    date: "Nov 2024 - Sept 2026",
     gitURL: "",
     techstack: [
       TechIcon.AWS,
@@ -240,7 +264,7 @@ export const WorkData = [
     phone system, put together with Connect, Lambda and DynamoDB.`,
   },
   {
-    id: 2,
+    id: 3,
     title: "Sr. Service Analyst - Exelon",
     date: "Oct 2023 - Nov 2024",
     gitURL: "",
@@ -254,7 +278,7 @@ export const WorkData = [
     division.`,
   },
   {
-    id: 3,
+    id: 4,
     title: "Consultant - Slalom",
     date: "Aug 2022 - Sep 2023",
     gitURL: "",
@@ -267,7 +291,7 @@ export const WorkData = [
     automation technology.`,
   },
   {
-    id: 4,
+    id: 5,
     title: "Information Systems Analyst - Consumers Credit Union",
     date: "Nov 2019 - Aug 2022",
     gitURL: "",
@@ -280,7 +304,7 @@ export const WorkData = [
     This is where I started cutting my teeth with automation and set the tone for my career so far.`,
   },
   {
-    id: 5,
+    id: 6,
     title: "Various others",
     date: "2013 - 2020",
     gitURL: "",
@@ -305,10 +329,10 @@ export const WorkData = [
     instructional videos in Photoshop and Final Cut Pro.`,
   },
   {
-    id: 6,
+    id: 7,
     title: "Windows XP Personal Website",
     date: "2025 - Present",
-    gitURL: "https://github.com/gpinfocap/winxpsite",
+    gitURL: "https://github.com/geepee123/winxpsite",
     techstack: [
       TechIcon.TYPESCRIPT,
       TechIcon.NEXTJS,
@@ -325,7 +349,7 @@ export const WorkData = [
     about presenting a career spent automating modern systems inside an operating system from 2001.`,
   },
   {
-    id: 7,
+    id: 8,
     title: "Wrath of Verath",
     date: "2026",
     gitURL: "https://github.com/geepee123/Wrath-of-Verath",
@@ -335,7 +359,7 @@ export const WorkData = [
     Who doesn't love giant mechas? Angels?`,
   },
   {
-    id: 8,
+    id: 9,
     title: "AWS Certifications",
     date: "May 2026 - May 2029",
     gitURL: "",
@@ -346,7 +370,7 @@ export const WorkData = [
     May 2029.`,
   },
   {
-    id: 9,
+    id: 10,
     title: "UiPath Certifications",
     date: "2022 - 2024",
     gitURL: "",
@@ -357,7 +381,7 @@ export const WorkData = [
     Automation Business Analyst Associate (November 2024).`,
   },
   {
-    id: 10,
+    id: 11,
     title: "Other Cloud & Data Certifications",
     date: "2011 - 2023",
     gitURL: "",
@@ -368,7 +392,7 @@ export const WorkData = [
     Also, going back rather further, an Adobe Certified Associate in Photoshop CS5 from 2011.`,
   },
   {
-    id: 11,
+    id: 12,
     title: "Education & Awards",
     date: "2012 - 202",
     gitURL: "",
@@ -386,78 +410,85 @@ export const WorkAccordionContent = [
     id: 1,
     type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Infocap AI - Agentic Automation",
+    title: "TTEC Digital - Principal Consultant",
     content: WorkData[0],
   },
   {
     id: 2,
     type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Exelon - Sr. Service Analyst",
+    title: "Infocap AI - Agentic Automation",
     content: WorkData[1],
   },
   {
     id: 3,
     type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Slalom - Consultant",
+    title: "Exelon - Sr. Service Analyst",
     content: WorkData[2],
   },
   {
     id: 4,
     type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Consumers CU - IS Analyst",
+    title: "Slalom - Consultant",
     content: WorkData[3],
   },
   {
     id: 5,
     type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Various others",
+    title: "Consumers CU - IS Analyst",
     content: WorkData[4],
   },
   {
     id: 6,
-    type: WorkType.PERSONAL,
+    type: WorkType.PROFESSIONAL,
     icon: file,
-    title: "Windows XP Personal Website",
+    title: "Various others",
     content: WorkData[5],
   },
   {
     id: 7,
     type: WorkType.PERSONAL,
     icon: file,
-    title: "Wrath of Verath",
+    title: "Windows XP Personal Website",
     content: WorkData[6],
   },
   {
     id: 8,
-    type: WorkType.CREDENTIALS,
-    icon: emptyfile,
-    title: "AWS Certifications",
+    type: WorkType.PERSONAL,
+    icon: file,
+    title: "Wrath of Verath",
     content: WorkData[7],
   },
   {
     id: 9,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "UiPath Certifications",
+    title: "AWS Certifications",
     content: WorkData[8],
   },
   {
     id: 10,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "Cloud & Data Certifications",
+    title: "UiPath Certifications",
     content: WorkData[9],
   },
   {
     id: 11,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "Education & Awards",
+    title: "Cloud & Data Certifications",
     content: WorkData[10],
+  },
+  {
+    id: 12,
+    type: WorkType.CREDENTIALS,
+    icon: emptyfile,
+    title: "Education & Awards",
+    content: WorkData[11],
   },
 ];
 

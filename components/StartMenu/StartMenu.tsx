@@ -36,7 +36,7 @@ interface StartMenuProps {
 
 const StartMenu = ({ menuControl }: StartMenuProps) => {
   const handleOpenGitHub = () => {
-    window.open("https://github.com/gpinfocap", "_blank", "noreferrer");
+    window.open("https://github.com/geepee123", "_blank", "noreferrer");
   };
 
   const handleShutdown = () => {
