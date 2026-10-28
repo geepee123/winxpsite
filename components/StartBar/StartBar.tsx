@@ -32,7 +32,10 @@ const getTime = () => {
 };
 
 const StartBar = () => {
-  const [time, setTime] = useState(getTime);
+  // Start empty so the server-rendered HTML and the first client render match.
+  // The real clock value is set after mount in the effect below, avoiding a
+  // hydration mismatch (React error #418) that would break interactivity.
+  const [time, setTime] = useState("");
   const ref = useRef<HTMLDivElement>(null);
   const [startMenuOpen, setStartMenuOpen] = useState(false);
   const Tabs = useSelector((state: RootState) => state.tab.tray);
@@ -69,14 +72,15 @@ const StartBar = () => {
     setStartMenuOpen(!startMenuOpen);
   };
 
-  // Time Update
+  // Time Update. Runs only on the client after mount, so the clock is populated
+  // post-hydration. Set it once immediately, then tick every second.
   useEffect(() => {
+    setTime(getTime());
     const timer = setInterval(() => {
-      const newTime = getTime();
-      newTime !== time && setTime(newTime);
+      setTime(getTime());
     }, 1000);
     return () => clearInterval(timer);
-  }, [time]);
+  }, []);
 
   // Start Menu Detection Out of Bound Listener
   useEffect(() => {

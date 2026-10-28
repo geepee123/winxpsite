@@ -107,17 +107,10 @@ export default function Home() {
           content="https://glenpringle.com/og-image.png"
         />
       </Head>
-      <form
-        name="contact"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        hidden
-      >
-        <input type="email" name="email" />
-        <input type="text" name="subject" />
-        <textarea name="message" />
-        <input type="text" name="bot-field" />
-      </form>
+      {/* Netlify Forms detection is handled by the static public/__forms.html
+          file. The previous hidden form here used an invalid self-closed
+          <textarea />, which contributed to a hydration mismatch, so it has
+          been removed. */}
       {isShutdown && <Shutdown />}
       <main className={styles.main}>
         <div
