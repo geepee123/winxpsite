@@ -360,9 +360,10 @@ export const WorkData = [
   },
   {
     id: 9,
-    title: "AWS Certifications",
+    title: "AWS Certified DevOps Engineer - Professional",
     date: "May 2026 - May 2029",
-    gitURL: "",
+    gitURL:
+      "https://www.credly.com/badges/31e3052c-3c02-47b4-b974-1e11135abb1c/public_url",
     techstack: [TechIcon.AWS, TechIcon.LAMBDA, TechIcon.DOCKER],
     gallery: [],
     overview: `The AWS Certified DevOps Engineer - Professional certification, covering continuous
@@ -371,37 +372,84 @@ export const WorkData = [
   },
   {
     id: 10,
-    title: "UiPath Certifications",
-    date: "2022 - 2024",
-    gitURL: "",
-    techstack: [TechIcon.UIPATH],
+    title: "AWS Certified AI Practitioner",
+    date: "2025",
+    gitURL:
+      "https://cp.certmetrics.com/amazon/en/public/verify/credential/442b110c471243a3b4227442aa4bb46f",
+    techstack: [TechIcon.AWS, TechIcon.CHATGPT],
     gallery: [],
-    overview: `Three UiPath certifications earned across the RPA side of my career: Certified
-    Advanced RPA Developer (October 2022), Automation Developer Associate (October 2024), and
-    Automation Business Analyst Associate (November 2024).`,
+    overview: `The AWS Certified AI Practitioner certification, covering the fundamentals of
+    artificial intelligence, machine learning and generative AI on AWS, along with responsible AI
+    practices and the AWS services that support them.`,
   },
   {
     id: 11,
-    title: "Other Cloud & Data Certifications",
-    date: "2011 - 2023",
-    gitURL: "",
-    techstack: [TechIcon.AZURE, TechIcon.MATILLION, TechIcon.PHOTOSHOP],
+    title: "UiPath Automation Developer Associate",
+    date: "October 2024",
+    gitURL:
+      "https://credentials.uipath.com/1418662c-423a-4a5e-baea-b7ec890d9385#acc.KacNEOs8",
+    techstack: [TechIcon.UIPATH],
     gallery: [],
-    overview: `Microsoft Certified: Azure Fundamentals (June 2023) and Matillion Associate
-    Certification (January 2023), covering cloud fundamentals and cloud-native data transformation.
-    Also, going back rather further, an Adobe Certified Associate in Photoshop CS5 from 2011.`,
+    overview: `The UiPath Automation Developer Associate certification, validating core skills in
+    designing, building and debugging automation workflows with UiPath Studio.`,
   },
   {
     id: 12,
+    title: "UiPath Certified Advanced RPA Developer",
+    date: "October 2022",
+    gitURL:
+      "https://credentials.uipath.com/a4b0ba2e-d0bd-427f-814c-d07740b55daa#acc.AVubnjKX",
+    techstack: [TechIcon.UIPATH],
+    gallery: [],
+    overview: `The UiPath Certified Advanced RPA Developer certification, validating advanced skills
+    in building robust, production-grade automations and applying UiPath best practices.`,
+  },
+  {
+    id: 13,
+    title: "UiPath Automation Business Analyst Associate",
+    date: "November 2024",
+    gitURL:
+      "https://credentials.uipath.com/253f45ee-137e-48a5-a373-bac2bff93ef6#acc.6ifSDrLd",
+    techstack: [TechIcon.UIPATH],
+    gallery: [],
+    overview: `The UiPath Automation Business Analyst Associate certification, validating the
+    ability to capture automation requirements, map processes and bridge business and development
+    teams on RPA projects.`,
+  },
+  {
+    id: 14,
+    title: "Microsoft Certified: Azure Fundamentals",
+    date: "June 2023",
+    gitURL:
+      "https://www.credly.com/badges/00310042-17d7-41c6-82ec-9bc30588da2a/public_url",
+    techstack: [TechIcon.AZURE],
+    gallery: [],
+    overview: `Microsoft Certified: Azure Fundamentals, covering foundational knowledge of cloud
+    services and how they are delivered on Microsoft Azure.`,
+  },
+  {
+    id: 15,
+    title: "Matillion ETL Foundations",
+    date: "January 2023 - January 2026",
+    gitURL:
+      "https://www.credly.com/badges/d26b485e-6bd3-4395-88e4-3de15ad11083/public_url",
+    techstack: [TechIcon.MATILLION, TechIcon.SQL],
+    gallery: [],
+    overview: `The Matillion ETL Foundations certification, covering extracting, migrating and
+    transforming data in the cloud using Matillion ETL. This credential expired in January 2026.`,
+  },
+  {
+    id: 16,
     title: "Education & Awards",
-    date: "2012 - 202",
+    date: "2012 - 2024",
     gitURL: "",
-    techstack: [],
+    techstack: [TechIcon.PHOTOSHOP],
     gallery: [],
     overview: `Studied at Saint Leo University from 2012 to 2016, taking part in the Honors Program,
     the InfoSec Club, the Computer Club, the Career Planning Advisory Board and the Residence Life
     LLC Committee. Took first place in the Saint Leo CTF Challenge in March 2016, was a YVAIN
-    Scholarship Finalist in 2014, and am an Eagle Scout. I additionally finished my MBA in 2024 from WGU.`,
+    Scholarship Finalist in 2014, and am an Eagle Scout. I additionally finished my MBA in 2024 from WGU.
+    Further back, I earned an Adobe Certified Associate in Photoshop CS5 (2011).`,
   },
 ];
 
@@ -466,29 +514,57 @@ export const WorkAccordionContent = [
     id: 9,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "AWS Certifications",
+    title: "AWS DevOps Engineer - Professional",
     content: WorkData[8],
   },
   {
     id: 10,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "UiPath Certifications",
+    title: "AWS AI Practitioner",
     content: WorkData[9],
   },
   {
     id: 11,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "Cloud & Data Certifications",
+    title: "UiPath Automation Developer Associate",
     content: WorkData[10],
   },
   {
     id: 12,
     type: WorkType.CREDENTIALS,
     icon: emptyfile,
-    title: "Education & Awards",
+    title: "UiPath Advanced RPA Developer",
     content: WorkData[11],
+  },
+  {
+    id: 13,
+    type: WorkType.CREDENTIALS,
+    icon: emptyfile,
+    title: "UiPath Business Analyst Associate",
+    content: WorkData[12],
+  },
+  {
+    id: 14,
+    type: WorkType.CREDENTIALS,
+    icon: emptyfile,
+    title: "Microsoft Azure Fundamentals",
+    content: WorkData[13],
+  },
+  {
+    id: 15,
+    type: WorkType.CREDENTIALS,
+    icon: emptyfile,
+    title: "Matillion ETL Foundations",
+    content: WorkData[14],
+  },
+  {
+    id: 16,
+    type: WorkType.CREDENTIALS,
+    icon: emptyfile,
+    title: "Education & Awards",
+    content: WorkData[15],
   },
 ];
 
